@@ -1,4 +1,4 @@
-import DB from "./dist/esm/src/simple.db.js";
+import DB from "./dist/esm/src/simple.db.js"; // import @k4i/simple.db
 
 const db = new DB('./db.json');
 

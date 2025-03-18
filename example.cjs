@@ -1,4 +1,4 @@
-const { DB } = require("./dist/cjs/src/simple.db.cjs");
+const { DB } = require("./dist/cjs/src/simple.db.cjs"); // import @k4i/simple.db
 
 const db = new DB('./db.json');
 

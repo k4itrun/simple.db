@@ -1,0 +1,66 @@
+{
+  "name": "@k4i/simple.db",
+  "version": "1.0.0",
+  "description": "A fast and easy-to-use JSON database for managing and persisting data in Node.js.",
+  "author": "k4itrun",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "import": "./dist/esm/src/simple.db.js",
+    "require": "./dist/cjs/src/simple.db.cjs"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "publish": "pnpm publish --access public --no-git-checks --provenance=false",
+    "publish:next": "pnpm publish --access public --no-git-checks --provenance=false --tag next",
+    "publish:test": "pnpm publish --access public --no-git-checks --provenance=false --dry-run",
+    "publish:git": "pnpm publish --access public --no-git-checks --provenance=true",
+    "publish:git:next": "pnpm publish --access public --no-git-checks --provenance=true --tag next",
+    "publish:git:test": "pnpm publish --access public --no-git-checks --provenance=true --dry-run",
+    "format": "prettier . --write --cache --ignore-unknown",
+    "format:check": "prettier . --check --ignore-unknown",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@k4i/eslint-config": "^1.0.4",
+    "@k4i/prettier-config": "^1.0.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "28.0.2",
+    "@rollup/plugin-node-resolve": "16.0.0",
+    "@rollup/plugin-typescript": "12.1.2",
+    "@types/node": "22.12.0",
+    "@types/rollup-plugin-auto-external": "2.0.5",
+    "rollup": "4.32.1",
+    "rollup-plugin-auto-external": "2.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "keywords": [
+    "json-database",
+    "nodejs",
+    "typescript",
+    "lightweight-db",
+    "key-value-store",
+    "data-persistence",
+    "file-storage",
+    "simple-db",
+    "local-database",
+    "nosql"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k4itrun/simple.db.git"
+  },
+  "bugs": {
+    "url": "https://github.com/k4itrun/simple.db/issues"
+  },
+  "homepage": "https://github.com/k4itrun/simple.db/tree/main/packages/eslint-config#readme"
+}

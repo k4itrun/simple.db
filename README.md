@@ -36,4 +36,4 @@ We welcome contributions! If you’d like to improve this project, feel free to 
 This project is distributed under the MIT License. Check the LICENSE file for more details.
 
 ## Contact
-For any inquiries or support, you can reach out via [contact@w1sh.xyz](mailto:contact@w1sh.xyz) or join our [Discord Server][https://discord.gg/CMNd45AXvD].
+For any inquiries or support, you can reach out via [contact@w1sh.xyz](mailto:contact@w1sh.xyz) or join our [Discord Server](https://discord.gg/CMNd45AXvD).
